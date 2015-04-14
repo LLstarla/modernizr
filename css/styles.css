@@ -1,13 +1,15 @@
-
+/* Newer Browsers*/
 html.svg #svg-logo {
 	width: 25%;
 	display: inline;
+	background: red;
 }
 
 html.no-svg #svg-logo {
 	display: none;
 }
 
+/*Older Browsers*/
 html.svg #png-logo {
 	display: none;
 }
@@ -15,4 +17,5 @@ html.svg #png-logo {
 html.no-svg #png-logo {
 	width: 25%;
 	display: inline;
+	background: blue;
 }
