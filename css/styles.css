@@ -1,20 +1,23 @@
-/* Your Styling */
-
-h1 {
-	background: #f0f;
-	color: #fff;
-	margin: 2em auto 0 auto;
-	height: 100px;
-	width: 100px;
-
-	/* Horiz Center*/
-	text-align: center;
-	line-height: 100px;
-	/* Make into Circle */
-	border-radius: 100px;
+/*For older browsers*/
+html.no-svg .nay,
+html.no-touch .nay {
+	color: orange;
 }
 
-h1:hover {
-	background: black;
-	transition: background .5s; 
+html.no-svg .yay,
+html.no-touch .yay  {
+	display: none;
 }
+
+
+/*For newer broswers*/
+html.svg .yay,
+html.touch .yay {
+	color: teal;
+}
+
+html.svg .nay,
+html.touch .nay {
+	display: none;
+}
+
