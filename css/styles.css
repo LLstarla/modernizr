@@ -1,33 +1,23 @@
-/*For older browsers*/
-html.no-svg .nay,
-html.no-touch .nay {
-	color: orange;
-}
 
-html.no-svg .yay,
-html.no-touch .yay  {
-	display: none;
-}
-
-
-/*For newer broswers*/
-html.svg .yay,
-html.touch .yay {
-	color: teal;
-}
-
-html.svg .nay,
-html.touch .nay {
-	display: none;
-}
-
-
-#svg-logo {
+#png-logo {
 	width: 25%;
 	display: inline;
 }
 
-#png-logo {
+html.svg #svg-logo {
+	width: 25%;
+	display: inline;
+}
+
+html.no-svg #svg-logo {
+	display: none;
+}
+
+html.svg #png-logo {
+	display: none;
+}
+
+html.no-svg #png-logo {
 	width: 25%;
 	display: inline;
 }
