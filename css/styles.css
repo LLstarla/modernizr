@@ -21,3 +21,7 @@ html.touch .nay {
 	display: none;
 }
 
+
+svg {
+	width: 50%;
+}
